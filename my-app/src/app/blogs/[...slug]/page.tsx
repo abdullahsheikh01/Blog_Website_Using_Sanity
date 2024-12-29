@@ -5,6 +5,10 @@ import { PortableText } from "next-sanity";
 import { components } from "@/app/components/customComponent/page";
 export const revalidate = 2;  
 const Blogs = async({params:{slug}}:{params:{slug:string}}) => {
+  interface MarkDef {
+    _key: string;
+    _type: string;
+}
     interface PostData {
         title: string;
         summary:string
@@ -19,7 +23,7 @@ const Blogs = async({params:{slug}}:{params:{slug:string}}) => {
           _key: string;
           _type: string;
           style: string;
-          markDefs: any[]; 
+          markDefs: MarkDef[]; 
           children: {
             _key: string;
             _type: string;
