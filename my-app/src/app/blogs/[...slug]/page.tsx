@@ -2,7 +2,7 @@ import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { PortableText } from "next-sanity";
-import { components } from "@/app/components/customComponent/page";
+import { components } from "@/app/components/CustomComponets";
 export const revalidate = 2;  
 const Blogs = async(
   {params}:{params:Promise<{slug:string}>}
