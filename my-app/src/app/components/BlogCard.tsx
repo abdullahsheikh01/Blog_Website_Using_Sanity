@@ -10,6 +10,7 @@ interface BlogCardProps {
     image:SanityImageSource
 }
 const BlogCard = (prop:BlogCardProps) => {
+    console.log(prop)
   return (
         <Card className="w-full h-auto">
      <CardHeader>

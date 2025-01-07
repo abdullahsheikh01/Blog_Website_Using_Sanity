@@ -1,5 +1,5 @@
 import { client } from "@/sanity/lib/client";
-import BlogCard from "../blogCard/page";
+import BlogCard from "../BlogCard";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 export const revalidate = 2;  
 const BlogsPage = async () => {
