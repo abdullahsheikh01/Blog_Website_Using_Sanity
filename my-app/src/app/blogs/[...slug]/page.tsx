@@ -4,7 +4,10 @@ import { urlFor } from "@/sanity/lib/image";
 import { PortableText } from "next-sanity";
 import { components } from "@/app/components/customComponent/page";
 export const revalidate = 2;  
-const Blogs = async(props:{slug:string}) => {
+const Blogs = async(
+  {params}:{params:Promise<{slug:string}>}
+) => {
+  const slug = (await params).slug
   interface MarkDef {
     _key: string;
     _type: string;
@@ -54,7 +57,7 @@ const Blogs = async(props:{slug:string}) => {
           };
         };
       };    
-    const query = `*[_type=="post"&&slug.current=="${props.slug}"]{
+    const query = `*[_type=="post"&&slug.current=="${slug}"]{
     title,image,content,summary,author->{name,image}
     }[0]`;
     const postData: PostData= await client.fetch(query);
