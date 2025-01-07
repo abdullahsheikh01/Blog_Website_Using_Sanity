@@ -18,7 +18,7 @@ This blog website is part of an assignment given by **GIAIC**. It is designed to
 - **TypeScript**: To ensure type safety and improve code maintainability.
 
 ## Deployment
-The website is deployed and can be accessed live at: 
+The website is deployed and can be accessed live at: https://blogswebsitebyabdullahshaikh-6601.vercel.app/
 
 ## Learning Outcomes
 Through this project, I gained valuable experience in:
@@ -32,8 +32,8 @@ I would like to express my gratitude to **GIAIC** for assigning this project, wh
 
 ## Contact
 If you have any questions or feedback, feel free to reach out:
-- **Email**: [Your Email Here]
-- **LinkedIn**: [Your LinkedIn Profile Here]
+- **Email**: abdullahkamran6601@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/abdullah-shaikh-29699b302/
 
 ---
 
