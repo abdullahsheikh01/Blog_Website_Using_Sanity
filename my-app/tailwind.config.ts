@@ -22,7 +22,7 @@ export default {
 		  mont: ['Montserrat', 'sans-serif']
 		},
 		screens: {
-		  exsm: { min: '360px', max: '639px' },
+		  exsm: { min: '1px', max: '639px' },
 		}
 	  },
   }, plugins: [require("tailwindcss-animate")],
