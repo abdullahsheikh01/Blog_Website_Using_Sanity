@@ -8,23 +8,22 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
-  		colors: {
-  			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-		fontFamily:{
-			mont:['Montserrat','sans-serif']
+	extend: {
+		colors: {
+		  background: 'var(--background)',
+		  foreground: 'var(--foreground)'
 		},
-		screens:{
-			exsm:{min:'360',max:'639px'},
-		  }
-  	}
-  },
-  plugins: [require("tailwindcss-animate")],
+		borderRadius: {
+		  lg: 'var(--radius)',
+		  md: 'calc(var(--radius) - 2px)',
+		  sm: 'calc(var(--radius) - 4px)'
+		},
+		fontFamily: {
+		  mont: ['Montserrat', 'sans-serif']
+		},
+		screens: {
+		  exsm: { min: '360px', max: '639px' },
+		}
+	  },
+  }, plugins: [require("tailwindcss-animate")],
 } satisfies Config;
