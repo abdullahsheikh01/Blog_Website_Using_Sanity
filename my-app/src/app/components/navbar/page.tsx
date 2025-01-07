@@ -26,7 +26,11 @@ const Navbar = () => {
                   Blogs
                 </p>
               </Link>
-              
+              <Link href="/components/contact">
+                <p className="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  Contact
+                </p>
+              </Link>
             </div>
           </div>
           <div className="flex md:hidden">
@@ -52,6 +56,11 @@ const Navbar = () => {
                 Blogs
               </p>
             </Link>
+            <Link href="/components/contact">
+                <p className="text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  Contact
+                </p>
+              </Link>
           </div>
         </div>
       )}
